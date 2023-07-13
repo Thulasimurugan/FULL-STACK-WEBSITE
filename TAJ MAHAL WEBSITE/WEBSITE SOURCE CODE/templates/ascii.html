@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>SOFIA</title>
+        <link href="{{url_for('static',filename='css/ascii.css')}}" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9d38e7f603.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="vrbox1">
+            <div class="top-box1">
+                <h1 class="vrtitle">SOFIA CHATBOX</h1>
+                <div class="vrimage">
+                    <img src="{{url_for('static',filename='1682667306879 (1).png')}}">
+                </div>
+                <div class="microphone" >
+                    <div class="mic">
+                        <a href="{{url_for('sofia')}}" ><i class="fa-solid fa-microphone fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="home" >
+                    <div class="mic1">
+                        <a href="{{url_for('home')}}" ><i class="fa-solid fa-house fa-2x"></i></a>
+                    </div>
+                </div>
+                {%for data in datas%}
+                <div class="delete" >
+                    <div class="mic2">
+                        <a href="{{url_for('Remove',id=data.ID)}}" ><i class="fa-solid fa-trash fa-2x"></i></a>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+            <div class="box">
+                {% for data in datas %}
+                 <div class="thulasi">
+                        <p class="space">{{data.COMMAND}}</p>
+                        <div class="thulasi1">
+                            <p class="space1">{{data.HELLO}}</p>
+                         </div>
+                 </div>
+                {% if 'ascii value' in data.COMMAND %}
+                <form action="{{url_for('ascii')}}" method="post">
+                    <div class="textbox">
+                        <div class="searchbox">
+                            <input type="text" class="type" name="ascii" placeholder="ENTER YOUR SEARCHING WORD HERE">
+                        </div>
+                        <input type = "submit" class="mic4" value="FIND">
+                    </div>
+                    </form>
+                    {% endif %}
+                 {%endfor%}
+             </div>
+        </div>
+        
+    </body>
+</html>

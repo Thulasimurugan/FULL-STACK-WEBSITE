@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <title>shajahan</title>
+        <link href="{{url_for('static',filename='css/design.css')}}" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+            .box
+            {
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 43px;
+                margin-right: 40px;
+                margin-bottom: 25px;
+            }
+            .box
+            {
+                height: 500px;
+                width: 1270px;
+                border-radius: 50px;
+                background:black;
+                overflow: hidden;
+                border-bottom: none;
+                border: 5px solid deepskyblue;
+                box-shadow: 0 0 40px deepskyblue;
+            }
+            .box1
+            {
+                position: absolute;
+                margin-top: 80px;
+                margin-left: 100px;
+                height:320px;
+                width: 320px;
+                background: transparent;
+                border: 5px solid white;
+                transform: rotate(-90deg);
+                border-top-right-radius: 50%;
+                border-bottom-left-radius: 50%;
+                overflow: hidden;
+            }
+            .box1:hover
+            {
+                position: absolute;
+                box-shadow:0 0 50px white;
+                transition: 4s;
+            } 
+        
+        </style>
+    </head>
+    <body>
+                <div class ="logo">
+                      <img src="{{url_for ('static',filename='taj-mahal-png-22645.png') }}">
+                  </div>
+                  <div class="hero">
+                      <h1><B>DESIGN</B></h1>
+                  </div>
+                  <div class="user">
+                    <a href="{{url_for('voice')}}"><i class="fa-solid fa-book-open-reader fa-2x"></i></a>
+                  </div>
+                  <div class="home">
+                    <a href="http://127.0.0.1:5000"><i class="fa-solid fa-house fa-2x"></i></a>
+                  </div>
+                  <div class="pause">
+                    <a href="{{url_for('thanks')}}"><i class="fa-solid fa-pause fa-2x"></i></a>
+                  </div>
+            <div class="box">
+                <div class="content" id="content">
+                <div class="head">
+                        <h3>ARCHITECTURE AND DESIGN</h3>
+                    </div>
+                    <div class="p">
+                        <p><ul><li>The most spectacular feature is the marble dome that surmounts the tomb. </li>
+                        <li>The dome is nearly 35 metres (115 ft) high which is close in measurement to the length of the base, and accentuated by .</li>
+                        <li>Because of its shape, the dome is often called an onion dome or amrud (guava dome)</li>
+                        <li>The top is decorated with a lotus design which also serves to accentuate its height.</li>
+                        <li> The shape of the dome is emphasised by four smaller domed chattris (kiosks) placed at its corners, which replicate the onion shape of the main dome.</li>
+                        <li>The dome is slightly asymmetrical Their columned bases open through the roof of the tomb and provide light to the interior.</li>
+                        <li>The lotus motif is repeated on both the chattris and guldastas.</li>
+                    </ul></p>
+                    </div>
+                    <div class="button0" onclick="hi()">
+                        <a href="#" class="btn0 btn0-one">MORE</a>
+                    </div>
+                <div class="box1">
+                    <div class="image">
+                        <img src="{{url_for('static',filename='2.jpg')}}">
+                    </div>
+                </div>
+                </div>
+                <div class="bottom" id="bottom">
+                    <div class="details">
+                        <p><ul>
+                            <li>The main finial was originally made of gold but was replaced by a copy made of gilded bronze in the early 19th century.</li>
+                                <li>This feature provides a clear example of integration of traditional Persian and Hindu decorative elements. The finial is topped by a moon, a typical Islamic motif whose horns point heavenward.</li>
+                                <li>The minarets, which are each more than 40 metres (130 ft) tall, display the designer's penchant for symmetry. They were designed as working minarets— a traditional element of mosques, used by the muezzin to call the Islamic faithful to prayer.</li>
+                                <li>Each minaret is effectively divided into three equal parts by two working balconies that ring the tower.The minarets were constructed slightly outside of the plinth so that in the event of collapse, a typical occurrence with many tall constructions of the period, the material from the towers would tend to fall away from the tomb.</li>
+                                <li>The exterior decorations of the Taj Mahal are among the finest in Mughal architecture.</li>
+                                <li> As the surface area changes, the decorations are refined proportionally. The decorative elements were created by applying paint, stucco, stone inlays or carvings.</li>
+                        </ul></p>
+                    </div>
+                    <div class="button1" onclick="hi1()">
+                        <a href="#" class="btn1 btn1-one" onclick="">MORE</a>
+                    </div>
+                </div>
+                <div class="content1" id="content1">
+                    <div class="head">
+                            <h3>EXTERIOR DECORATION</h3>
+                        </div>
+                        <div class="p">
+                            <p><ul><li>Abstract forms are used throughout, especially in the plinth, minarets, gateway, mosque, jawab and, to a lesser extent, on the surfaces of the tomb.</li>
+                            <li>The domes and vaults of the sandstone buildings are worked with tracery of incised painting to create elaborate geometric forms.</li>
+                            <li>White inlays are used in sandstone buildings, and dark or black inlays on the white marbles.</li>
+                            <li>the lower walls of the tomb are white marble dados sculpted with realistic bas relief depictions of flowers and vines.</li>
+                            <li>The interior chamber of the Taj Mahal reaches far beyond traditional decorative elements. The inlay work is not pietra dura, but a lapidary of precious and semiprecious gemstones.</li>
+                        </ul></p>
+                        </div>
+                        <div class="button0">
+                            <a href="#" class="btn0 btn0-one" onclick="hi2()">MORE</a>
+                        </div>
+                    <div class="box1">
+                        <div class="image">
+                            <img src="{{url_for('static',filename='Taj_Mahal_Mosque_Interior_Hall.jpg')}}">
+                        </div>
+                    </div>
+                    <div class="content3" id="content3">
+                        <div class="head1">
+                                <h3>EXTERIOR DECORATION</h3>
+                            </div>
+                            
+                            <div class="square1">
+                                <div class="square2">
+                                    <div class="image1">
+                                        <img src="{{url_for('static',filename='200px-TajFinialTiling.jpg')}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square3">
+                                <div class="square4">
+                                    <div class="image2">
+                                        <img src="{{url_for('static',filename='200px-Tombs-in-crypt.jpg')}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="square5">
+                                <div class="square6">
+                                    <div class="image3">
+                                        <img src="{{url_for('static',filename='200px-TajPaintedGeometry.jpg')}}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="details1">
+                                <p><ul>
+                                    <li>Herringbone inlays define the space between many of the adjoining elements</li>
+                                        <li> Mortared areas of the marble buildings have been stained or painted in a contrasting colour which creates a complex array of geometric patterns.</li>
+                                        <li>The minarets, which are each more than 40 metres (130 ft) tall, display the designer's penchant for symmetry. They were designed as working minarets— a traditional element of mosques, used by the muezzin to call the Islamic faithful to prayer.</li>
+                                        <li> The inlay work is not pietra dura, but a lapidary of precious and semiprecious gemstones.</li>
+                                </ul></p>
+                            </div> 
+                        </div>
+                    </div>
+          </div>
+          <script>
+            var content = document.getElementById("content");
+            var bottom = document.getElementById("bottom")
+            var content1 = document.getElementById("content1");
+            var content3 = document.getElementById("content3");
+            function hi()
+            {
+                content.style.top="-500px";
+                bottom.style.top="-600px"
+            }
+            function hi1()
+            {
+                bottom.style.left="-1200px";
+                content1.style.top="-1150px";
+            }
+            function hi2()
+            {
+                content1.style.top="-1900px";
+                content3.style.top = "-600px";
+            }
+          </script>
+          
+        </script>
+        <div class="vrbox">
+            <h3 class="sofia">SOFIA</h3>
+            <div class="vrimage">
+                <img src="{{url_for('static',filename='1682667306879.png')}}">
+            </div>
+            <div class="vrpara">
+                <p><ul><li>Say "HELLO TO SOFIA".</li>
+                    <li>Sofia is an virtual assistant over here,Its similar to Amazon Alexa.</li>
+                    <li>Sofia is here to answer your asking Questions.</li>
+                    <li>Click OK to move Further and wait for Microphone to start Accessing.</li>
+            </ul></p>
+            </div>
+        </div>
+        </div>    
+        
+    </body>
+</html>

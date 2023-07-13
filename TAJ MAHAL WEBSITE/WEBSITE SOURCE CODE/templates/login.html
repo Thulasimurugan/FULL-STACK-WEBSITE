@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>TAG MAHAL</title>
+    </head>
+    <body>     
+        <html>
+    <head>
+        <title>TAG MAHAL</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+        <script src="https://kit.fontawesome.com/9d38e7f603.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <script src="{{url_for('static',filename='javascript/login.js')}}">
+        </script>
+    </head>
+    <body>     
+        <div class ="logo">
+            <img src="{{url_for ('static',filename='taj-mahal-png-22645.png') }}">
+        </div>
+        <div class="hero">
+            <h1><B>LOGIN</B></h1>
+        </div>
+        <div class="background-image">
+           <img src="{{url_for ('static',filename='photo-1564507592333-c60657eea523.jpg') }}"> 
+        </div>
+        <div class="pic">
+            <img src="{{url_for('static',filename='1675068369761.png') }}">
+        </div>
+        <div class="form-box">
+            <div class="button-box">
+            <div id='btn'></div>
+            <button type=' button'  class='toggle-button' onclick='register()'>Register</button>
+            <button type=' button'  class='toggle-button' onclick='login()' >login</button>
+            </div>
+            <form action="{{ url_for('login') }}" method="post" id="register" class ='input-group'> 
+            <div class="h"><h3>NAME</h3></div>
+            <div class="msg">{{msg}}</div>
+            <div class="data">
+                <input type="name" name="username" placeholder="" id="username">
+            </div>
+            
+            <div class="title">
+                <h3>GMAIL</H3>
+            </div>
+            <div class="data1">
+                <input type="gmail" name="gmail" placeholder="" id="gmail" >
+            </div>
+
+            <div class="title">
+                <h3>PASSWORD</h3>
+            </div>
+             <div class="data1">
+                <input type="password" name="password" placeholder="" id ="password">
+            </div>
+            <div class="title2">
+                <h3>ROLE</h3>
+            </div>
+            <div class="role">
+                <input type="text" name="role" placeholder="LIKE I AM A DOCTOR " id ="role">
+            </div>
+            <div class="title2">
+                <h3>ABOUT TAJMAHAL</h3>
+            </div>
+            <div class="about ">
+                <input type="text" name="about" placeholder="TELL ABOUT TAJ MAHAL" id ="role">
+            </div>
+            <div class="ua">
+                <h4>Already hava an account<a href="" class="us">LOGIN</a></h4>
+            </div>
+            <input type="submit" class="text2" onclick="register()"  value="REGISTER">
+            </form>
+            <form action="{{ url_for('home') }}" method="post" id="login" class ='input-group'>
+                <div class="ha"><h3>NAME</h3></div>
+                <div class="dat">
+                <input type="name" name="username" placeholder="" id="username">
+                </div>   
+                <div class="titl">
+                    <h3>PASSWORD</h3>
+                </div>
+                 <div class="da">
+                    <input type="password" name="password" placeholder="" id ="password">
+                </div>
+                <input type="submit" class="text1" onclick="register()"  value="LOGIN">
+            </form>
+            
+            </div>
+            </div>
+            <script>
+                var x = document.getElementById('register');
+                var y = document.getElementById('login');
+                var z = document.getElementById('btn');
+                
+                function register()
+                {
+                    x.style.left = "450px";
+                    y.style.left = "450px"
+                    z.style.left = "110px"
+                }
+                function login()
+                {
+                    x.style.left = "0px";
+                    y.style.left = "-85px"
+                    z.style.left = "0"
+                }
+            </script>
+
+        </body>
+</html>
+
+if "good afternoon" in COMMAND:
+            current_time = datetime.datetime.now().strftime("%H:%M:%p")
+            print(current_time)
+            current_time = str(current_time)
+            if current_time >= "05:00:AM" and current_time <= "12:00:PM":
+                HELLO =  "sorry this is good morning 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good morning")
+                speaker.runAndWait() 
+            elif current_time >= "12:00:PM" and current_time <= "17:00:PM":
+                HELLO = "hmm ok good afternoon 😄 " + current_time 
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("hmm ok good afternoon ")
+                speaker.runAndWait()
+                print(type(current_time))
+            elif current_time >= "17:00:PM" and current_time <= "19:00:PM":
+                HELLO =  "sorry this is good evening 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good evening ")
+                speaker.runAndWait() 
+            elif current_time >= "19:00:PM" and current_time <= "05:00:AM":
+                HELLO =  "sorry this is good night 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good night")
+                speaker.runAndWait()
+        if "good evening" in COMMAND:
+            current_time = datetime.datetime.now().strftime("%H:%M:%p")
+            print(current_time)
+            current_time = str(current_time)
+            if current_time >= "05:00:AM" and current_time <= "12:00:PM":
+                HELLO =  "sorry this is good morning 😠" + current_time 
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good morning")
+                speaker.runAndWait()
+            elif current_time >= "12:00:PM" and current_time <= "17:00:PM":
+                HELLO = "sorry this is good afternoon 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good afternoon")
+                speaker.runAndWait() 
+                print(type(current_time))
+            elif current_time >= "17:00:PM" and current_time <= "19:00:PM":
+                HELLO =  "hmm ok good evening 😄" + current_time 
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("hmm ok good evening")
+                speaker.runAndWait()
+            elif current_time >= "19:00:PM" and current_time <= "05:00:AM":
+                HELLO =  "sorry this is good night 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good night")
+                speaker.runAndWait()
+        if "good night" in COMMAND:
+            current_time = datetime.datetime.now().strftime("%H:%M:%p")
+            print(current_time)
+            current_time = str(current_time)
+            if current_time >= "05:00:AM" and current_time <= "12:00:PM":
+                HELLO =  "sorry this is good morning 😠" + current_time 
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good morning")
+                speaker.runAndWait()
+            elif current_time >= "12:00:PM" and current_time <= "17:00:PM":
+                HELLO = "sorry this is good afternoon 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good afternoon")
+                speaker.runAndWait() 
+            elif current_time >= "17:00:PM" and current_time <= "19:00:PM":
+                HELLO =  "sorry this is good evening 😠" + current_time
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("sorry this is good evening")
+                speaker.runAndWait() 
+            elif current_time >= "19:00:PM" and current_time <= "05:00:AM":
+                HELLO =  "hmm good night 😴" + current_time 
+                speaker = pyttsx3.init()
+                voices = speaker.getProperty("voices")
+                speaker.setProperty("voice",voices[1].id)
+                speaker.say("hmm good night")
+                speaker.runAndWait()
+
+

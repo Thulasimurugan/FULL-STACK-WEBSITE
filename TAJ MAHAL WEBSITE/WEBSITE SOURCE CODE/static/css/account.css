@@ -1,0 +1,364 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.logo
+{
+    margin-top: 40px;
+    margin-left: 10px;
+    position: absolute;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    
+}
+.logo img
+{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    border: 5px solid deeppink;
+    border-radius:70%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+}
+.hero
+{
+    color: white;
+    margin-left:  140px;
+    margin-top: 3px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    font-family: "Sofia", sans-serif;    
+}
+.vertical
+{
+    margin-top: 75px;
+    margin-left: 240px;
+    position: absolute;
+    background-color: white;
+    width: 5px;
+    height: 520px;
+}
+.username
+{
+    position: absolute;
+    color: white;
+    display: flex;
+    margin-top: 295px;
+    font-size: 40px;
+    margin-left: 40px;
+    text-transform: lowercase;
+    font-family: 'Tangerine', serif;
+}
+.button0
+{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 16px;
+}
+.btn0
+{
+    position: absolute;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 2px solid darkseagreen;
+    border-radius: 50px;
+    padding:4px 73px;
+}
+.btn0-one:hover
+{
+    color: white;
+    background: linear-gradient(to left,deepskyblue,red,deeppink,yellow);
+    padding:4px 88px;
+    font-size: 19px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+}
+.button4
+{
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 16px;
+}
+.btn4
+{
+    position: absolute;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 2px solid darkseagreen;
+    border-radius: 50px;
+    padding:4px 61.5px;
+}
+.btn4-one:hover
+{
+    color: white;
+    background: linear-gradient(to left,deepskyblue,red,deeppink,yellow);
+    padding:4px 84px;
+    font-size: 19px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+}
+.button1
+{
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 16px;
+}
+.btn1
+{
+    position: absolute;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 2px solid darkseagreen;
+    border-radius: 50px;
+    padding:4px 72px;
+}
+.btn1-one:hover
+{
+    color: white;
+    padding:4px 90px;
+    font-size: 19px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    background: linear-gradient(to left,brown,red,deeppink,yellow);
+    
+
+}
+.button5
+{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 16px;
+}
+.btn5
+{
+    position: absolute;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 2px solid darkseagreen;
+    border-radius: 50px;
+    padding:4px 76px;
+}
+.btn5-one:hover
+{
+    color: white;
+    padding:4px 90px;
+    font-size: 19px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    background: linear-gradient(to left,brown,red,deeppink,yellow);
+}
+.button2
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.btn2
+{
+    position: absolute;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 2px solid darkseagreen;
+    border-radius: 50px;
+    padding:4px 62px;
+}
+.btn2-one:hover
+{
+    position: absolute;
+    color: black;
+    background: linear-gradient(to left,brown,red,deeppink,yellow);
+    padding:4px 64px;
+    font-size: 21px;
+
+}
+.image
+{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.image img
+{
+    border: 6px solid white;
+    border-radius: 60;
+}
+.btn
+{
+    color: white;
+}
+.button3
+{
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 16px;
+}
+.btn3
+{
+    position: absolute;
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+    border: 2px solid darkseagreen;
+    border-radius: 50px;
+    padding:6px 18px;
+}
+.btn3-one:hover
+{
+    padding:4px 62px;
+    color: white;
+    font-size: 19px;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    background: linear-gradient(to left,brown,darkblue,deeppink,yellow);
+
+}
+.up
+{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 45px;
+
+}
+.up input
+{
+    background-color: black;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+.up input:hover
+{
+    background: linear-gradient(to right,green,red);
+    border:3px solid yellow;
+    transition: 2s;
+    border-radius: 50px;
+}
+.text
+{
+    color: white;
+}
+.image1
+{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 63px;
+    height: 100px;
+    width: 100px;
+    border: 4px solid white;
+    overflow: hidden;
+    border-radius: 50px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.msg
+{
+    margin-left: 500px;
+    margin-top: 50px;
+    color: white;
+    font-weight: 300;
+}
+.pic
+{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 80px;
+}
+.pic img
+{
+    border: 4px solid brown;
+    border-radius: 20px;
+    height:220px;
+    width:1110px
+    
+}
+.image2
+{
+    position: absolute;
+    margin-top: 50px;
+    margin-left:300px;
+}
+.image2 img
+{
+    height: 100px;
+    width: 100px;
+    border: 4px solid yellow;
+    border-radius: 70px;
+}
+.head
+{
+    position: absolute;
+    margin-top: 240px;
+    margin-left:375px;
+}
+.head 
+{
+    color:darkblue;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Explora', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+}
+.user
+{
+    position: absolute;
+    margin-top: 150px;
+    margin-left:380px;
+}
+.user
+{
+    color: darkblue;
+    text-transform: uppercase;
+     font-weight: 600;
+     font-size: 40px;
+     font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}
+.gmail
+{
+    position: absolute;
+    color: darkblue;
+    margin-top: 200px;
+    margin-left: 375px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Explora', cursive;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    
+}
+.about
+{
+    position: absolute;
+    margin-top: 400px;
+    margin-left:375px;
+}
+.about
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Explora', cursive;
+    font-weight: 600;
+}
+.about1
+{
+    position: absolute;
+    margin-top: 330px;
+    margin-left:260px;
+}
+.about1 h2
+{
+    display: flex;
+    color: white;
+    font-family: 'Tangerine', serif;
+}
+

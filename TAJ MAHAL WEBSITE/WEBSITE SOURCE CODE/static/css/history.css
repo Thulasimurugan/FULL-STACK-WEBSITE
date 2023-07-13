@@ -1,0 +1,231 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background:linear-gradient(to left,deeppink,orange)
+}
+.shape
+{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+
+}
+.shape
+{
+    height: 602px;
+    width: 1280px;
+    border-radius: 50px;
+    background:white;
+    overflow: hidden;
+    border-bottom: none;
+    border: 5px solid deepskyblue;
+}
+.logo
+{
+    margin-top: 50px;
+    margin-left: -15px;
+    position: absolute;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    
+}
+.logo img
+{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    border: 5px solid deepskyblue;
+    border-radius:70%;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+}
+.hero
+{
+    color: deepskyblue;
+    margin-left:  110px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    position: absolute;
+    font-family: "Sofia", sans-serif;    
+}
+.custom-shape-divider-bottom-1675072751 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675072751 svg {
+    position: relative;
+    display: block;
+    width: 1280px;
+}
+
+.custom-shape-divider-bottom-1675072751 .shape-fill {
+    fill: deepskyblue;
+}
+.user
+{
+    position: absolute;
+    margin-top:-450px;
+    margin-left: 1000px;
+}
+.user i
+{
+    color: deepskyblue;
+    border: 3px solid deepskyblue;
+    padding: 9px 9px;
+    border-radius: 60px;
+    background: transparent;
+}
+.user i:hover
+{
+    background: deepskyblue;
+    color: white;
+    box-shadow: 0 0 3px 4px deeppink;
+    transition: 1.5s;
+}
+.home
+{
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 1120px;
+}
+.home i
+{
+    color: deepskyblue;
+    border: 3px solid deepskyblue;
+    padding: 9px 9px;
+    border-radius: 100%;
+    background: transparent;
+}
+.home i:hover
+{
+    background: deepskyblue;
+    color: white;
+    box-shadow: 0 0 3px 4px deeppink;
+    transition: 1.5s;
+}
+.pause
+{
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 1062px;
+}
+.pause i
+{
+    color: deepskyblue;
+    border: 3px solid deepskyblue;
+    padding: 9px 13px;
+    border-radius: 60%;
+    background: transparent;
+}
+.pause i:hover
+{
+    background: deepskyblue;
+    color: white;
+    box-shadow: 0 0 3px 4px deeppink;
+    transition: 1.5s;
+}
+.title
+{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 760px;
+}
+.title h1
+{
+    color: deepskyblue;
+    font-family: 'Explora', cursive;
+    font-size: 70px;
+}
+.paragraph
+{
+    position: absolute;
+    margin-top: 650px;
+    margin-left: 40px;
+}
+.paragraph p
+{
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    width: 1280px;
+    color: white;
+    font-family:"ropoto ", sans-serif; 
+}
+.lines
+{
+    position: absolute;
+    text-decoration: none;
+    font-size: 19px;
+    margin-top: 750px;
+    font-weight: 500;
+    margin-left: 70px;
+    color: white;
+    font-family:"ropoto ", sans-serif;
+}
+.line
+{
+    position: absolute;
+    text-decoration: none;
+    font-size: 19px;
+    margin-top: 870px;
+    font-weight: 500;
+    margin-left: 40px;
+    width: 1280px;
+    color: white;
+    font-family:"ropoto ", sans-serif; 
+}
+.svg3
+{
+    position: absolute;
+    margin-top: 40px;
+    margin-left:100px;
+    width:500px;
+    height: 200px;
+    transform: rotate(90deg);
+}
+.svg2
+{
+    position: absolute;
+    margin-top: 58px;
+    margin-left:-10px;
+    width: 520px;
+    height: 180px;
+    transform: rotate(90deg);
+    overflow: hidden;
+}
+.svg2::before
+{
+    content: "";
+    position: absolute;
+    margin-left: 0px;
+    margin-top:-150px;
+    background: black;
+    height: 930px;
+    width: 100px;
+    animation: animate8 10s linear infinite;
+}
+@keyframes animate8
+{
+    0%
+    {
+        transform: translateX(-10vh);
+    }
+    100%
+    {
+        transform: translateX(100vh);
+    }
+}

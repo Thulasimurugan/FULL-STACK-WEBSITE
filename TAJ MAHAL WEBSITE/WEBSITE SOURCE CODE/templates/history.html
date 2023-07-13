@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>
+            WELCOME
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/history.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Explora&family=Moon+Dance&family=Sofia&family=Sofia+Sans+Extra+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+      <style type="text/css">
+        section
+        {
+          position: relative;
+          margin-top: 180px;
+          margin-left: 100px;
+          width: 597px;
+          height: 300px;
+          border-radius: 50px;
+          background: url("{{url_for('static',filename='Thulasi.jpg') }}");
+        }
+        section::before
+        {
+          content: "";
+          position: absolute;
+          height: 300px;
+          width: 600px;
+          background:url( "{{url_for('static',filename='vecteezy_water-logo-splash_1195909.jpg') }}");
+          border-radius: 50px;
+          mix-blend-mode: screen;
+        }   
+      </style>
+      </head>
+      <body>
+        <div class="shape">
+          <div class ="logo">
+            <img src="{{url_for ('static',filename='taj-mahal-png-22645.png') }}">
+        </div>
+        <div class="hero">
+            <h1><B>HISTORY</B></h1>
+        </div>
+        <div class="custom-shape-divider-bottom-1675072751">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>
+      <section></section>
+      <div class="user">
+        <a href="{{url_for('text')}}"><i class="fa-solid fa-book-open-reader fa-2x"></i></a>
+      </div>
+      <div class="home">
+        <a href="http://127.0.0.1:5000"><i class="fa-solid fa-house fa-2x"></i></a>
+      </div>
+      <div class="pause">
+        <a href="{{url_for('thanks')}}"><i class="fa-solid fa-pause fa-2x"></i></a>
+      </div>
+      <div class="title">
+        <h1>THIS IS ABOUT TAJMAHAL</h1>
+      </div>
+        </div>
+        <div class="paragraph">
+          <p> It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD.</p>
+        </div>
+        <div class="lines">
+          <li>The Taj Mahal is considered one of the world's seven wonders.</li>
+          <li>Taj Mahal was built in about 17th century.</li>
+          <li>Shah Jahan, the Mughal Emperor, built it.</li>
+          <li>He built it in the memory of his beloved wife.</li>
+          <li>There is one mosque around the Taj Mahal.</li>
+          <li>It has four stunning minars that add to its charm.</li>
+      </div>
+      <div class="line">
+        <p>The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, who died on 17 June that year, while giving birth to their 14th child, Gauhara Begum. Construction started in 1632, and the mausoleum was completed in 1648, while the surrounding buildings and garden were finished five years later. The imperial court documenting Shah Jahan's grief after the death of Mumtaz Mahal illustrates the love story held as the inspiration for the Taj Mahal.
+
+Shah Jahan and Mumtaz Mahal
+
+"Shah Jahan on a globe" from the Smithsonian Institution
+
+
+
+Artistic depiction of Mumtaz Mahal
+
+Architecture and design
+Main article: Origins and architecture of the Taj Mahal
+File:Taj Mahal - Mausoleum der Liebe (CC BY-SA 4.0).webm
+Animation showing the Taj Mahal (English subtitles)
+The Taj Mahal incorporates and expands on design traditions of Indo-Islamic and earlier Mughal architecture. Specific inspiration came from successful Timurid and Mughal buildings including the Gur-e Amir (the tomb of Timur, progenitor of the Mughal dynasty, in Samarkand),[14] Humayun's Tomb which inspired the Charbagh gardens and hasht-behesht (architecture) plan of the site, Itmad-Ud-Daulah's Tomb (sometimes called the Baby Taj), and Shah Jahan's own Jama Masjid in Delhi. While earlier Mughal buildings were primarily constructed of red sandstone, Shah Jahan promoted the use of white marble inlaid with semi-precious stones. Buildings under his patronage reached new levels of refinement.
+
+Tomb
+The tomb is the central focus of the entire complex of the Taj Mahal. It is a large, white marble structure standing on a square plinth and consists of a symmetrical building with an iwan (an arch-shaped doorway) topped by a large dome and finial. Like most Mughal tombs, the basic elements are Indo-Islamic in origin.
+
+            The base structure is a large multi-chambered cube with chamfered corners forming an unequal eight-sided structure that is approximately 55 metres (180 ft) on each of the four long sides. Each side of the iwan is framed with a huge pishtaq or vaulted archway with two similarly shaped arched balconies stacked on either side. This motif of stacked pishtaqs is replicated on the chamfered corner areas, making the design completely symmetrical on all sides of the building. Four minarets frame the tomb, one at each corner of the plinth facing the chamfered corners. The main chamber houses the false sarcophagi of Mumtaz Mahal and Shah Jahan; the actual graves are at a lower level.[17]</p>
+        </div>
+    </body>
+</html>
+  

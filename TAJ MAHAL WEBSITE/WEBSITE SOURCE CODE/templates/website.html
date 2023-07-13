@@ -1,0 +1,453 @@
+<html>
+    <head>
+        <title>TAG MAHAL</title>
+        <style type="text/css">
+            .student
+            {
+                margin-top: 105px;
+                margin-left: 20px;
+                position: absolute;
+                width: 90px;
+                height: 80px;
+                border-radius: 70%;
+                border-top-right-radius: 70%;
+                border-bottom-left-radius: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: black;
+                overflow: hidden;
+            }
+            .student::before
+            {
+                content: '';
+                position: absolute;
+                width: 40px;
+                height: 90px;
+                background: linear-gradient(#00ccff, white,#ffa500);
+                animation: animate2 4s linear infinite;
+
+            }
+            .student::after
+            {
+                content: '';
+                position: absolute;
+                margin-top: 2px;
+                margin-left: 2px;
+                height: 70px;
+                width: 80px;
+                inset: 3px;
+                background: linear-gradient(#0e1538);
+                background:#0e1538 url("{{url_for ('static',filename='taj-mahal-png-22645.png') }}");
+                border-radius: 70%;
+                border-top-right-radius: 70%;
+                border-bottom-left-radius: 70%;
+            }
+            @keyframes animate2
+            {
+                0%
+                {
+                    transform: rotate(0deg);
+
+                }
+                100%
+                {
+                    transform: rotate(360deg);
+                }
+            }
+            .student h2
+            {
+                color: white;
+            }
+            .container .drop
+            {
+                position: relative;
+                width: 600px;
+                height: 443px;
+                border: 2px solid black;
+                border-radius: 50% 50% 25% 75% / 33% 46% 54% 67%  ;
+                box-shadow: inset 20px 20px 20px rgba(0,0,0,0.10),
+                25px 35px 20px rgba(0,0,0,0.10), 25px 30px 30px rgba(0,0,0,0.10),
+                inset -20px -20px 25px rgba(255,255,255,0.9);
+                background:url("{{url_for ('static',filename='Thulasi.jpg') }}");
+            }
+            .box
+            {
+                position: relative;
+                margin-top: 680px;
+                margin-left: 80px;
+                height: 510px;
+                width:1200px;
+                border-radius: 40px;
+                background: yellow;
+                display: flex;
+                overflow: hidden;
+            }
+            .box::before
+            {
+                content: "";
+                position: absolute;
+                margin-top: 300px;
+                margin-left: -100px;
+                height: 180px;
+                width: 1500px;
+                background: linear-gradient(to left,black,deeppink,deepskyblue,red,green);
+                animation: animate1 4s linear infinite;
+            }
+            @keyframes animate1
+            {
+                0%
+                {
+                    transform:rotate(0deg);
+                }
+                100%
+                {
+                    transform: rotate(350deg);
+                }
+            }
+            .box1
+            {
+                position:absolute;
+                height: 500px;
+                width: 1190px;
+                margin-top: 5px;
+                margin-left: 5px;
+                border-radius: 40px;
+                background:black;
+                overflow: hidden;
+            }
+            .round
+            {
+                position: absolute;
+                margin-top: -200px;
+                margin-left: -500px;
+                height: 700px;
+                width: 650px;
+                background:url("{{url_for('static',filename='mesh-679.png')}}");
+                border-radius: 80%;
+            }
+            .round:hover
+            {
+                box-shadow: 0 0 4px 3px skyblue;
+            }
+            
+            </style>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://kit.fontawesome.com/9d38e7f603.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+        <script src="{{url_for('static',filename='js/sign.js') }}"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Sofia+Sans+Extra+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+    </head>
+    <body>     
+        <div class ="logo">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="{{url_for ('static',filename='Taj Mahal - 23592') }}">
+            </video>
+            <div class="student">
+                <h2>T</h2></div>  
+        </div>
+        <div class="hero">
+            <h1><B>TAG MAHAL</B></h1>
+        </div>
+        <div class="row">
+            <ul class="main-nav">
+                <b><li class="active"><a href="history">HISTORY</a></li>
+                <li><a href="https://www.google.com/search?q=taj+mahal+picture&rlz=1C1RLNS_enIN877IN877&sxsrf=AOaemvL8Y2D-dHHWYNrs8PgeiszBgIQaqQ:1630718020744&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjtqOuCkuTyAhXPb30KHU8fD6AQ_AUoAXoECAEQAw">PICTURES</a></li>
+                <li><a href="https://www.google.com/search?q=taj+mahal+hd+wallpaper+4k&tbm=isch&ved=2ahUKEwjejZuKkuTyAhXVWCsKHayVCg0Q2-cCegQIABAA&oq=taj+mahal+hd+&gs_lcp=CgNpbWcQARgCMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDoHCCMQ7wMQJzoICAAQgAQQsQM6CwgAEIAEELEDEIMBUJi4BFjU1ARgiOsEaABwAHgAgAHJAYgBnAySAQUwLjkuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=VMgyYd6TDNWxrQGsq6po&rlz=1C1RLNS_enIN877IN877">WALLPAPER</a></li>
+                <li><a href="login"><b>LOGIN</b></a></li>
+                </ul></b>
+        </div>
+        <div class="button0" onclick="hi()">
+            <a href="#" class="btn0 btn0-one"><i class="fa-solid fa-microphone fa-2x"></i></a>
+        </div> 
+            <div class="location">
+            <a href="https://www.google.com/maps/d/u/0/viewer?ie=UTF8&hl=en&t=h&msa=0&ll=27.17519517573788%2C78.04218348612997&spn=0.00525%2C0.006845&z=20&source=embed&mid=1dhgc3LvpUzdvBEFv0kuja3irzEI" class="location-btn"><i class="fas fa-search-location fa-2x"></i>
+            </a>
+            </div>
+            <div class="user">
+                <a href="my account" class="user-btn"><i class="fa-solid fa-user fa-2x"></i></a>
+       </div> 
+       <div class="container">
+        <div class="drop">
+        </div>
+       </div>
+       <div class="define">
+        <p>The Taj is pinkish in the morning, milky white in the evening and golden when  moon shines. </p>
+    </div>
+    <div class="title">
+        <h1 class="text1"><b>INDIA'S NO.1 SPECIAL</b></h1>
+    </div>
+    <div class="button1">
+        <a href="" class="btn1 btn1-one">HD WALLPAPER</a>
+    </div> 
+    <div class="button2">
+        <a href="" class="btn2 btn2-one">VIDEOS</a>
+    </div>
+    <div id="here">
+        <div class="vrbox">
+            <h3 class="sofia">SOFIA</h3>
+            <div class="vrimage">
+                <img src="{{url_for('static',filename='1682667306879.png')}}">
+            </div>
+            <div class="vrpara">
+                <p><ul><li>Say "HELLO TO SOFIA".</li>
+                    <li>Sofia is an virtual assistant over here,Its similar to Amazon Alexa.</li>
+                    <li>Sofia is here to answer your asking Questions.</li>
+                    <li>Click OK to move Further and wait for Microphone to start Accessing.</li>
+            </ul></p>
+            </div>
+            <div class="vrbutton1">
+                <a href="#" class="vr1 vr1-one" onclick="hi2()">CANCEL</a>
+            </div>
+            <div class="vrbutton2">
+                <a href="{{url_for('assistant')}}" class="vr1 vr1-one" onclick="hi1()">OK</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+            <div class="box1">
+                <div class="slider1">
+                    <button type="button" class="right" onclick="right()"><i class="fa-solid fa-arrow-left fa-2x"></i></button>
+                    <button type="button" class="left" onclick="left()"><i class="fa-solid fa-arrow-right fa-2x"></i></button>
+                </div>
+                <div class="letter" id="letter">
+                    <div class="bubble">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bubble">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bubble">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bubble">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bubble">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="bubble">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="read">
+                        The Taj Mahal is considered one of the world's seven wonders.
+                        Taj Mahal was built in about 17th century.
+                        Shah Jahan, the Mughal Emperor, built it.
+                        He built it in the memory of his beloved wife.
+                        There is one mosque around the Taj Mahal.
+                        It has four stunning minars that add to its charm.
+                    </div>
+                    <div class="button3">
+                        <a href="history" class="btn3 btn3-one">MORE</a>
+                    </div>
+                    <div class="user1">
+                        <a href="{{url_for('text1')}}"><i class="fa-solid fa-book-open-reader fa-2x"></i></a>
+                      </div>
+                <div class="round">
+                        <div class="kavi">
+                            <h3 class="">I found a Taj Mahal most appropriate example of artistically expressed love.</h3>
+                        </div>
+                        <div class="image">
+                            <img src="{{url_for('static',filename='pexels-zhangeldy-beimish-1583339 (1).jpg') }}">
+                        </div>
+                        </div>
+                  <div class="letter1" id="letter1">
+                    <div class="read1">
+                        He was born on 5 January 1592 in Lahore, present-day Pakistan, as the ninth child and third son of Prince Salim  by his wife, Jagat Gosain. The name Khurram  was chosen for the young prince by his grandfather, Emperor Akbar, with whom the young prince shared a close relationship. Jahangir stated that Akbar was very fond of Khurram and had often told him "There is no comparison between him and your other sons."
+                  
+                        When Khurram was born, 
+                    </div>
+                    
+                    <div class="square">
+                        <div class="svg">
+                            <img src = "{{ url_for('static',filename='wave (1).png') }}">
+                        </div>
+                        <div class="svg1">
+                            <img src = "{{ url_for('static',filename='wave (1).png') }}">
+                        </div>
+                        <div class="shajahan">
+                            <img src="{{url_for('static',filename='png-transparent-rani-durgavati-mughal-empire-mughal-emperor-history-of-india-mughal-architecture-others-akbar-mughal-empire-mughal-emperor-thumbnail.png')}}">
+                        </div>
+                        <div class="border">
+                            <img src="{{url_for('static',filename='5a28b5ee47cc49.0501583015126174542941 (1) (1).png')}}">
+                        </div>
+                        <div class="kavi1">
+                            <h3 class="">Shah Jahan had dreamed of immortalising his love and built the Taj Mahal.</h3>
+                        </div>
+                        </div>
+                        <div class="button4">
+                            <a href="history" class="btn4 btn4-one">MORE</a>
+                        </div>
+                        <div class="user2">
+                            <a href="{{url_for('text1')}}"><i class="fa-solid fa-book-open-reader fa-2x"></i></a>
+                          </div>
+                  
+                  </div>
+                  <div class="container1">
+                    <div class="bubble1">
+                        <span style="--i:20;"></span>
+                        <span style="--i:20;"></span>
+                        <span style="--i:20;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:17;"></span>
+                        <span style="--i:11;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:22;"></span>
+                        <span style="--i:24;"></span>
+                        <span style="--i:26;"></span>
+                        <span style="--i:27;"></span>
+                        <span style="--i:25;"></span>
+                        <span style="--i:20;"></span>
+                        <span style="--i:20;"></span>
+                        <span style="--i:12;"></span>
+                        <span style="--i:19;"></span>
+                        <span style="--i:22;"></span>
+                        <span style="--i:24;"></span>
+                        <span style="--i:26;"></span>
+                        <span style="--i:27;"></span>
+                        <span style="--i:25;"></span>
+                        <span style="--i:20;"></span>
+                        <span style="--i:20;"></span>
+                    </div>
+                  </div>
+                
+          </div>
+        </div> 
+        </div> 
+        <div class="border1">
+            <img src="{{url_for('static',filename='1678021104290.png')}}">
+        </div>
+        <div class="lovestory">
+            <h2>Lovestory</h2>
+        </div>
+        <div class="love">
+            <img src="{{url_for('static',filename='1678022182888.png')}}">
+        </div>
+        <div class="poem">
+            <p>Considered as one of the most beautiful buildings in the world, the Taj Mahal in Agra is a landmark like no other. Built to immortalise the undying love of a man for his wife, it is an iconic symbol of love and India’s most recognised monument. If you love architecture and travel photography, then chances are that you have either already been there or are dying to go.</p> 
+        </div>
+            <div class="muru">
+                <img  class="two" src="{{url_for('static',filename='kisspng-taj-mahal-shah-jahan-mughal-empire-mughal-emperor-vishnu-5ace450bb37864.1185755115234675317351.png')}}">
+            </div>
+            <div class="top">
+                <img src="{{url_for('static',filename='1678021104314.png')}}">
+            </div>
+            <div class="p">
+                <p>Shah Jahan participated in the military campaigns against the Rajputs of Mewar and the Lodis of Deccan. In addition to Shahryar, Shah Jahan executed most of his rival claimants to the throne. He commissioned many monuments, including the Red Fort, Shah Jahan Mosque and the Taj Mahal, where his favorite wife Mumtaz Mahal is entombed. In foreign affairs, Shah Jahan presided over the aggressive campaigns against the Deccan Sultanates, the conflicts with the Portuguese, and the wars with Safavids. He also suppressed several local rebellions, and dealt with the devastating Deccan famine of 1630–32.</p>
+            </div>
+            <div class="top1">
+                <img src="{{url_for('static',filename='1678021104314.png')}}">
+            </div>
+            <div class="button5">
+                <a href="shajahan" class="btn5 btn5-one">MORE</a>
+            </div>
+            <div class="Mumtaz">
+                <img  class="one" src="{{url_for('static',filename='mumtaz-mahal (1).jpg')}}">
+            </div>
+            <div class="top2">
+                <img src="{{url_for('static',filename='1678021104277.png')}}">
+            </div>
+            <div class="p1">
+                <p>Mumtaz Mahal died in 1631 in Burhanpur, Deccan (present-day Madhya Pradesh), during the birth of her 14th child, a daughter named Gauhar Ara Begum. Shah Jahan had the Taj Mahal built as a tomb for her, which is considered to be a monument of undying love. As with other Mughal royal ladies, no contemporary likenesses of her are accepted, but imagined portraits were created from the 19th century onwards.
+                    Mumtaz Mahal was betrothed to Shah Jahan around 5 April 1607,[25] when she was 14 years old at the time and he was 15. They were, however, married five years after the year of their betrothal on 10 May 1612 or 7 June 1612 in Agra
+                </p>
+                <div class="top3">
+                    <img src="{{url_for('static',filename='1678021104277.png')}}">
+                </div>
+                <div class="button6">
+                    <a href="#" class="btn6 btn6-one">MORE</a>
+                </div>
+                <div class="top4">
+                    <img src="{{url_for('static',filename='1678021104314.png')}}">
+                </div>
+                <div class="p2">
+                    <p>
+                        The most spectacular feature is the marble dome that surmounts the tomb. The dome is nearly 35 metres (115 ft) high which is close in measurement to the length of the base, and accentuated by the cylindrical "drum" it sits on, which is approximately 7 metres (23 ft) high.
+Because of its shape, the dome is often called an onion dome or amrud (guava dome)
+The top is decorated with a lotus design which also serves to accentuate its height.
+The shape of the dome is emphasised by four smaller domed chattris (kiosks) placed at its corners, which replicate the onion shape of the main dome.
+                    </p>
+                    </div>
+                    <div class="top5">
+                        <img src="{{url_for('static',filename='1678021104314.png')}}">
+                    </div>
+                    <div class="design">
+                        <img src="{{url_for('static',filename='117px-TajJaliInlay.jpg')}}">
+                    </div>
+                    <div class="button6">
+                        <a href="mumtaj" class="btn6 btn6-one">MORE</a>
+                    </div><div class="button7">
+                        <a href="design"  class="btn7 btn7-one">MORE</a>
+                    </div>
+                    <script type="text/javascript">
+                        var letter = document.getElementById('letter');
+                        var letter1 = document.getElementById('letter1');
+                        function left()
+                        {
+                            letter.style.left = "-1200px";
+                            letter1.style.left = "-480px";
+                        }
+                        function right()
+                        {
+                            letter.style.left = "1px";
+                            letter1.style.left = "1px";
+                        }
+                        
+                    </script>
+                    <script type="text/javascript">
+                        var here = document.getElementById('here');
+                        function hi1()
+                        {
+                            here.style.top = "-650px";
+                        }
+                        function hi()
+                        {
+                            here.style.top="670px";
+                        }
+                        function hi2()
+                        {
+                            here.style.top = "-650px";
+                        }
+                     </script>
+                     <div class="final">
+                        <div class ="logo1">
+                            <img src="{{url_for ('static',filename='pexels-zhangeldy-beimish-1583339 (1).jpg') }}">
+                        </video>
+                     </div>
+                                          
+    </body>
+</html>
+
+

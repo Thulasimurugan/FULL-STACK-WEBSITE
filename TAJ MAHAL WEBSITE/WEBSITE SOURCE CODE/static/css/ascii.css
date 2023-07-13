@@ -1,0 +1,407 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background: black;
+}
+.vrbox1
+{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 250px;
+    height: 600px;
+    width:850px;
+    border-radius: 50px;
+    background:deepskyblue;
+    border: 5px solid white;
+    overflow: hidden;
+}
+.top-box1
+{
+    position: absolute;
+    margin-top: -20px;
+    margin-left: -10px;
+    height: 90px;
+    width: 900px;
+    background:radial-gradient(darkblue,deeppink);
+    border:4px solid white;
+}
+.microphone
+{
+    position: absolute;
+    margin-top: 25.5px;
+    margin-left: 630px;
+    background: black;
+    border-radius: 50%;
+    height: 56px;
+    width:56px;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+    overflow: hidden;
+}
+.microphone::before
+{
+    content: "";
+    position:absolute;
+    height:60px;
+    width: 20px;
+    background: white;
+    animation: round 3s linear infinite;
+}
+.mic
+{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background:linear-gradient(lime,gold);
+    border-radius: 50% ;
+    place-items: center;
+}
+@keyframes round
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg)
+    }
+}
+.mic a
+{
+    position: absolute;
+    margin-top: 10.5px;
+    margin-left:14px;
+    place-items: center;
+    color: white;
+}
+.delete
+{
+    position: absolute;
+    margin-top: 25.5px;
+    margin-left: 770px;
+}
+.home
+{
+    background:black;
+    border-radius: 50%;
+    height: 56px;
+    width:56px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+.home::before
+{
+    content: "";
+    position:absolute;
+    height:60px;
+    width: 20px;
+    background: white;
+    animation: round 3s linear infinite;
+}
+.mic1
+{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background:linear-gradient(lime,gold);
+    border-radius: 50% ;
+}
+@keyframes round
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg)
+    }
+}
+.mic1 a
+{
+    position: absolute;
+    place-items: center;
+    margin-top: 10.5px;
+    margin-left: 10px;
+    color: white;
+}
+.home
+{
+    position: absolute;
+    margin-top: 25.5px;
+    margin-left: 700px;
+}
+.delete
+{
+    background: black;
+    border-radius: 50%;
+    height: 56px;
+    width:56px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    overflow: hidden ;
+}
+.delete::before
+{
+    content: "";
+    position:absolute;
+    height:60px;
+    width: 20px;
+    background: white;
+    animation: round 3s linear infinite;
+}
+.mic2
+{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background:linear-gradient(lime,gold);
+    border-radius: 50% ;
+}
+@keyframes round
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg)
+    }
+}
+.mic2 i
+{
+    position: absolute;
+    place-items: center;
+    margin-top: 10.5px;
+    margin-left: 13px;
+    color: white;
+}
+.thulasi 
+{
+    margin-top: 10px;
+    margin-left: 400px;
+}
+.thulasi p
+{
+    color: white;
+    border: 4px solid white;
+    display: flex;
+    width:365px;
+    font-weight: 800;
+    font-size: 18px;
+    place-items: center;
+    letter-spacing: 3px;
+    background: darkblue;
+    border-radius: 20px;
+    padding:5px 30px;
+    
+}
+.thulasi1
+{
+    margin-top: 20px;
+    margin-left: -380px;
+}
+.thulasi1 p
+{
+    color: white;
+    border: 4px solid white;
+    width:380px;
+    font-weight: 800;
+    font-size: 18px;
+    place-items: center;
+    letter-spacing: 3px;
+    background: darkblue;
+    border-radius: 20px;
+    padding:5px 30px;
+}
+.space
+{
+    margin-top: 5px;
+}
+.space1
+{
+    margin-top: 5px;
+}
+.box
+{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 0px;
+    height: 600px;
+    width: 850px;
+    overflow: scroll;
+    background: deepskyblue;
+}
+.vrtitle
+{
+    position:absolute;
+    margin-top: 33px;
+    margin-left: 100px;
+    color: white;
+    font-weight: 600;
+}
+.vrimage
+{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.vrimage img
+{
+    position: absolute;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.searchbox
+{
+    position: fixed;
+    margin-top: 0px;
+    margin-left:50px;
+}
+.type
+{
+    position: fixed;
+    background: white;
+    border-radius: 50px;
+    color:deeppink;
+    font-weight: 400;
+    border: 4px solid deeppink;
+    font-size: 20px;
+    height:50px;
+    width: 600px;
+    
+}
+.textbox
+{
+    position:fixed;
+    margin-top: 310px;
+    margin-left: 0px;
+    height: 50px;
+    width:850px;
+    background:deepskyblue;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.type::placeholder
+{
+    color: deeppink;
+}
+.t{
+    position: absolute;
+    margin-top:40px;
+    color: deepskyblue;
+    font-size: 30px;
+}
+.t1{
+    position: absolute;
+    margin-top: 10px;
+    color: deepskyblue;
+    font-size: 30px;
+}
+.text
+{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.speak
+{
+    position: fixed;
+    margin-top: 264px;
+    margin-left: 680px;
+    background: black;
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+    overflow: hidden ;
+}
+.speak::before
+{
+    content: "";
+    position:absolute;
+    height:60px;
+    width: 20px;
+    background: white;
+    animation: round 3s linear infinite;
+}
+.mic3
+{
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    background:linear-gradient(lime,gold);
+    border-radius: 50% ;
+}
+@keyframes round
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg)
+    }
+}
+.mic3 i
+{
+    position: absolute;
+    place-items: center;
+    font-size: 30px;
+    margin-top: 7.5px;
+    margin-left: 11.5px;
+    color: white;
+}
+
+.mic4
+{
+    
+    position: fixed;
+    margin-top: 2.5px;
+    margin-left: 750px;
+    font-weight: 900;
+    color: white;
+    height: 45px;
+    width: 78px;
+    background:linear-gradient(lime,gold);
+    border-radius: 50% ;
+}
+@keyframes round
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg)
+    }
+}
+.mic4 i
+{
+    position: absolute;
+    place-items: center;
+    font-size: 30px;
+    margin-top: 7.5px;
+    margin-left: 7.5px;
+    color: white;
+}
+::-webkit-scrollbar
+{
+    width:0px
+}

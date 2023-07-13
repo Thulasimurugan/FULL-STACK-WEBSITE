@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>TAG MAHAL</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/account.css') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <script src="https://kit.fontawesome.com/9d38e7f603.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02d6122dbc.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Sofia+Sans+Extra+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Explora&family=Moon+Dance&family=Sofia+Sans+Extra+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+        <style type="text/css">
+          .image
+          {
+            margin-top: 100;
+            margin-left: 100px;
+            border: 4px solid ;
+          }
+
+          .my_file
+            {
+            
+              position: absolute;
+              bottom: 415px;
+              left: 90px;
+              outline: none;
+              color: transparent;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 6px 25px;
+              cursor: pointer;
+              transition: 0.5s;
+            }
+            .my_file::-webkit-file-upload-button
+            {
+                visibility: hidden;
+            }
+
+          .my_file::before
+            {
+                content: '\f083';
+                bottom: 0;
+                font-family: fontAwesome;
+                background-color: #fff;
+                padding: 9px 9px;
+                border-radius: 50%;
+                border-bottom-left-radius: 50%;
+                border-bottom-right-radius: 50%;
+                margin-left: 23px;
+                font-size: 25px;
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="logo">
+          <img src="{{url_for ('static',filename='taj-mahal-png-22645.png') }}">
+      </div>
+      <div class="hero">
+          <h1><B>MY ACCOUNT</B></h1>
+      </div>
+      <form action="{{url_for('upload')}} " method="post" enctype="multipart/form-data">
+        <div class="profile">
+          {% for images in files %}
+        <div class="image1">
+          <img src="{{url_for ('upload_image',filename='static/pictures/'  +images) }}">
+        </div>
+        {%endfor%}
+          <input type="file"  name="picture" class="my_file" >
+        </div>
+        <div>{{msg}}</div>
+        <div class="up">
+          <input type="submit" class="text" value= "UPLOAD IMAGE">
+        </div>
+      </form>
+      <div class="vertical">
+      </div>
+      {% for data in datas %}
+      <tr>
+        <div class="username">
+          <td>{{data.USERNAME}}</td>
+        </tr>
+    </div>
+    {%endfor%}
+    <div class="button0">
+      <a href="http://127.0.0.1:5000 " class="btn0 btn0-one"><b>HOME</b></a>
+    </div>
+    <div class="button1">
+      <a href="login" class="btn1 btn1-one"><b>LOGIN</b></a>
+    </div>
+    <div class="button5">
+      <a href="{{url_for('assistant')}}" class="btn5 btn5-one"><b>SOFIA</b></a>
+      </div>
+    {% for images in files %}
+    <div class="button3">
+      <a href="{{ url_for('delete',photo = images)}}" class="btn3 btn3-one"><b>REMOVEPROFILE</b></a>
+    </div>
+    {% endfor %}
+    <div class="pic">
+      <img src="{{url_for('static',filename='photo-1507525428034-b723cf961d3e.jpg') }}">
+  </div>
+  {% for images in files %}
+        <div class="image2">
+          <img src="{{url_for ('upload_image',filename='static/pictures/'  +images) }}">
+        </div>
+        {%endfor%}
+        {% for data in datas %}
+      <tr>
+        <div class="user">
+          <td>{{data.USERNAME}}</td>
+        </tr>
+    </div>
+    {%endfor%}
+    {%for data in datas%}
+        <tr>
+          <div class="gmail">
+          <td>
+            {{data.GMAIL}}
+          </td>
+        </tr>
+        </div>
+        {%endfor%}
+        {%for data in datas%}
+        <div class="head">{{data.ROLE}}</div>
+        {%endfor%}
+        <div class="about1">
+          <h2>ABOUT TAJMAHAL</h2>
+        </div>
+        {%for data in datas%}
+        <div class="about">{{data.ABOUT}}</div>
+        {%endfor%}
+        {%for data in datas%}
+        <div class="button4">
+          <a href="{{url_for('logout',id=data.ID)}}" class="btn4 btn4-one"><b>LOGOUT</b></a>
+        </div>
+        {%endfor%}
+          
+      </body>
+</html>
+      
+     
+      
+        
